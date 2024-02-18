@@ -1,14 +1,28 @@
 ---
 layout: layouts/base.njk
 ---
-<form name="contact" netlify>
-    <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+<form name="contact" method="POST" data-netlify="true">
+      <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Firstname</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <button type=Submit>Send</button>
+  <label for="exampleFormControlTextarea1" class="form-label">Surname</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
 </div>
-</form>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Email address</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"placeholder="name@example.com"></textarea>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    I agree to terms and conditions
+  </label>
+</div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
