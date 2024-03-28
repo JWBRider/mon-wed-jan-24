@@ -262,7 +262,7 @@ a[href].header-anchor:hover {
 }
 a[href].header-anchor:focus,
 :hover > a[href].header-anchor {
-	color: #aaa;
+	color: white;
 }
 
 h2 + .header-anchor {
